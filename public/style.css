@@ -1,0 +1,124 @@
+/* 🌟 General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #2b5876, #4e4376);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Room Section */
+#menu {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+}
+
+button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* 🌟 Game Section */
+#game {
+    display: none;
+    margin-top: 30px;
+}
+
+/* 🌟 Room Code Display */
+#roomDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* 🌟 Game Board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cell:hover {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* 🌟 Status Message */
+#status {
+    font-size: 1.4em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+input{
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* 🌟 Mobile Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    #board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+}
